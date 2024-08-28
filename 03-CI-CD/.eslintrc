@@ -1,0 +1,25 @@
+/* prettier-ignore */
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended", "prettier"],
+    "plugins": ["react", "jest"],
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest/globals": true
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"  // Diese Zeile fügt die automatische Erkennung der React-Version hinzu
+      }
+    },
+    "rules": {
+      "prettier/prettier": ["error"]
+    }
+  }
